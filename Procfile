@@ -1,1 +1,1 @@
-web: chmod u+x release.sh && ./release.sh
+web: chmod u+x start.sh && ./start.sh
