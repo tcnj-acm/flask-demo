@@ -1,3 +1,2 @@
 web:
-    python init.py
-    gunicorn main:app
+    python init.py & gunicorn main:app & wait -n
