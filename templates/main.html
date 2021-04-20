@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="/" method="POST">
+            {{ form.csrf_token  }}
+            {{ form.content.label() }}
+            {{ form.content() }}
+            <input type="submit">
+        </form>
+        
+        <li>
+            {% for post in results  %}
+            <ul>{{ post.text  }}</ul>
+            {% endfor  %}
+        </li>
+    </body>
+</html>
