@@ -1,2 +1,1 @@
-web:
-    python init.py & gunicorn main:app & wait -n
+web: chmod u+x release.sh && ./release.sh
